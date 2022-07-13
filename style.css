@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 70px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #0062be;
+    transition: .5s;
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+header .logo{
+    max-width: 80px;
+    position: relative;
+    height: 90px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+
+
+}
+header ul li {
+    list-style: none;
+
+
+
+}
+header ul li a {
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size:4em;
+    font-weight: 900;
+    line-height: 1.5em;
+    text-transform: uppercase;
+
+}
+.content .textBox h2 span{
+    font-size: 2em;
+
+}
+.content .textBox p {
+    color: #fff;
+}
+.content .textBox a{
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: #111;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 260px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform:translateX(-50%);
+    display: flex;
+
+}
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .5;
+}
+.thumb li img{
+    max-width: 40px;
+}
+.thumb li  :hover{
+    transform: translateY(-15px);
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: flex;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    filter: invert(1);
+    margin:  5px 0;
+    transform: scale(0.6);
+}
